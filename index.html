@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HS Lavagens Exteriores | Lavagem Profissional</title>
+
+    <meta name="description" content="HS Lavagens Exteriores — lavagem profissional de exteriores, fachadas, telhados, pavimentos, muros e outras superfícies. Peça o seu orçamento.">
+
+    <meta name="theme-color" content="#08243b">
+
+    <style>
+        /* =========================
+           BASE
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #14283a;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1160px, calc(100% - 40px));
+            margin: auto;
+        }
+
+
+        /* =========================
+           CABEÇALHO
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #e5edf2;
+        }
+
+        .header-inner {
+            min-height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-symbol {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            background: #08243b;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 19px;
+            letter-spacing: -1px;
+        }
+
+        .logo-text strong {
+            display: block;
+            font-size: 18px;
+            color: #08243b;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 8px;
+            color: #668091;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-top: 3px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: #4d6170;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #1682bd;
+        }
+
+        .nav-button {
+            background: #08243b;
+            color: white !important;
+            padding: 12px 18px;
+            border-radius: 9px;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 690px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            background:
+                radial-gradient(circle at 85% 20%, rgba(76,190,232,0.25), transparent 28%),
+                linear-gradient(135deg, #f4fbfe, #e5f4fa);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: rgba(36,157,211,0.07);
+            right: -250px;
+            bottom: -280px;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 70px;
+            padding: 90px 0;
+        }
+
+        .eyebrow {
+            color: #1682bd;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background: #1682bd;
+        }
+
+        .hero h1 {
+            font-size: clamp(43px, 5vw, 70px);
+            line-height: 1.02;
+            letter-spacing: -3px;
+            color: #08243b;
+            margin: 22px 0;
+        }
+
+        .hero-description {
+            max-width: 620px;
+            color: #566b79;
+            font-size: 18px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 22px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .button-primary {
+            background: #08243b;
+            color: white;
+            box-shadow: 0 12px 30px rgba(8,36,59,0.18);
+        }
+
+        .button-primary:hover {
+            transform: translateY(-2px);
+            background: #103b5c;
+        }
+
+        .button-secondary {
+            background: white;
+            border: 1px solid #c4d5df;
+            color: #08243b;
+        }
+
+        .button-secondary:hover {
+            border-color: #1682bd;
+        }
+
+
+        /* HERO VISUAL */
+
+        .hero-visual {
+            min-height: 460px;
+            border-radius: 28px;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(
+                    150deg,
+                    #08243b 0%,
+                    #0b4265 45%,
+                    #28a3d5 100%
+                );
+            box-shadow: 0 25px 60px rgba(8,36,59,0.17);
+        }
+
+        .hero-visual::before {
+            content: "";
+            position: absolute;
+            width: 480px;
+            height: 220px;
+            background: rgba(255,255,255,0.16);
+            border-radius: 50%;
+            left: -100px;
+            top: 150px;
+            transform: rotate(-15deg);
+        }
+
+        .hero-visual::after {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 170px;
+            background: rgba(255,255,255,0.10);
+            border-radius: 50%;
+            right: -130px;
+            bottom: 70px;
+            transform: rotate(15deg);
+        }
+
+        .visual-content {
+            position: absolute;
+            z-index: 3;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            color: white;
+        }
+
+        .visual-content small {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #a9e7fa;
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        .visual-content h2 {
+            font-size: 29px;
+            line-height: 1.15;
+            margin-top: 12px;
+            max-width: 400px;
+        }
+
+        .visual-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .visual-list span {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.18);
+            padding: 7px 10px;
+            border-radius: 6px;
+            font-size: 10px;
+        }
+
+
+        /* =========================
+           INTRODUÇÃO
+        ========================= */
+
+        .section {
+            padding: 105px 0;
+        }
+
+        .intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 90px;
+        }
+
+        .section-label {
+            color: #1682bd;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .section-title {
+            color: #08243b;
+            font-size: clamp(35px, 4vw, 52px);
+            line-height: 1.08;
+            letter-spacing: -2px;
+            margin-top: 12px;
+        }
+
+        .intro-text {
+            color: #5d707e;
+            font-size: 17px;
+        }
+
+        .intro-text p + p {
+            margin-top: 18px;
+        }
+
+
+        /* =========================
+           SERVIÇOS
+        ========================= */
+
+        .services-section {
+            background: #f5f9fb;
+        }
+
+        .section-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 40px;
+            margin-bottom: 45px;
+        }
+
+        .section-heading > p {
+            max-width: 390px;
+            color: #647785;
+            font-size: 15px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .service {
+            background: white;
+            border: 1px solid #dfe8ee;
+            border-radius: 20px;
+            padding: 30px;
+            min-height: 255px;
+            position: relative;
+            transition: 0.25s;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 35px rgba(8,36,59,0.08);
+        }
+
+        .service-number {
+            position: absolute;
+            top: 22px;
+            right: 25px;
+            font-size: 11px;
+            color: #94a6b2;
+            font-weight: bold;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            background: #e6f7fd;
+            color: #1682bd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 27px;
+        }
+
+        .service h3 {
+            color: #08243b;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: #657885;
+            font-size: 14px;
+        }
+
+        .service-highlight {
+            background: #08243b;
+            color: white;
+            border-color: #08243b;
+        }
+
+        .service-highlight h3,
+        .service-highlight p {
+            color: white;
+        }
+
+        .service-highlight .service-icon {
+            background: rgba(255,255,255,0.12);
+            color: #78d4f6;
+        }
+
+
+        /* =========================
+           TRABALHOS
+        ========================= */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            grid-auto-rows: 280px;
+            gap: 15px;
+        }
+
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(135deg, #0b3857, #38add7);
+        }
+
+        .gallery-item.large {
+            grid-row: span 2;
+        }
+
+        /*
+        Quando tiveres as fotografias reais,
+        vamos substituir estes blocos por imagens.
+        */
+
+        .gallery-placeholder {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 25px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-placeholder::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 130px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            top: 35%;
+            left: -60px;
+            transform: rotate(-15deg);
+        }
+
+        .gallery-placeholder strong,
+        .gallery-placeholder span {
+            position: relative;
+            z-index: 2;
+        }
+
+        .gallery-placeholder strong {
+            font-size: 15px;
+        }
+
+        .gallery-placeholder span {
+            font-size: 11px;
+            color: #c9edf9;
+            margin-top: 3px;
+        }
+
+
+        /* =========================
+           PROCESSO
+        ========================= */
+
+        .process-section {
+            background: #f5f9fb;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border-top: 1px solid #dbe5eb;
+            padding-top: 40px;
+        }
+
+        .process {
+            padding: 0 25px;
+            border-right: 1px solid #dbe5eb;
+        }
+
+        .process:first-child {
+            padding-left: 0;
+        }
+
+        .process:last-child {
+            border-right: none;
+        }
+
+        .process-number {
+            color: #1682bd;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .process h3 {
+            color: #08243b;
+            margin: 12px 0 7px;
+            font-size: 18px;
+        }
+
+        .process p {
+            color: #657885;
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           CONTACTO
+        ========================= */
+
+        .contact-section {
+            background: #08243b;
+            color: white;
+            padding: 90px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 50%;
+            right: -250px;
+            top: -200px;
+        }
+
+        .contact-grid {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .contact-section .section-label {
+            color: #6dd4f8;
+        }
+
+        .contact-title {
+            color: white;
+            font-size: clamp(35px, 4vw, 54px);
+            line-height: 1.08;
+            letter-spacing: -2px;
+            margin: 14px 0;
+        }
+
+        .contact-description {
+            color: #b7cad6;
+            max-width: 600px;
+        }
+
+        .contact-box {
+            background: white;
+            color: #08243b;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 17px;
+            border-bottom: 1px solid #e0e8ed;
+        }
+
+        .contact-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .contact-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: #e5f7fd;
+            color: #1682bd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .contact-item small {
+            display: block;
+            color: #718391;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-top: 2px;
+            font-size: 14px;
+        }
+
+        .contact-button {
+            display: block;
+            text-align: center;
+            background: #1682bd;
+            color: white;
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 7px;
+        }
+
+
+        /* =========================
+           RODAPÉ
+        ========================= */
+
+        footer {
+            background: #061a2a;
+            color: #91a8b7;
+            padding: 50px 0 22px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+
+        .footer-brand .logo-text strong {
+            color: white;
+        }
+
+        .footer-brand .logo-text span {
+            color: #718898;
+        }
+
+        .footer-brand p {
+            font-size: 13px;
+            margin-top: 17px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            font-size: 13px;
+        }
+
+        .footer-social a {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 18px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: 10px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .hero-inner,
+            .contact-grid,
+            .intro {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-inner {
+                gap: 50px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery-item.large {
+                grid-row: span 1;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 35px;
+            }
+
+            .process {
+                border-right: none;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .container {
+                width: calc(100% - 28px);
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-inner {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+                letter-spacing: -2px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .hero-visual {
+                min-height: 340px;
+            }
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .section-heading {
+                display: block;
+            }
+
+            .section-heading > p {
+                margin-top: 15px;
+            }
+
+            .services-grid,
+            .gallery,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-auto-rows: 260px;
+            }
+
+            .process {
+                padding: 0;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     CABEÇALHO
+========================= -->
+
+<header>
+    <div class="container header-inner">
+
+        <a href="#inicio" class="logo">
+
+            <div class="logo-symbol">
+                HS
+            </div>
+
+            <div class="logo-text">
+                <strong>HS</strong>
+                <span>LAVAGENS EXTERIORES</span>
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="#servicos">Serviços</a>
+
+            <a href="#trabalhos">Trabalhos</a>
+
+            <a href="#empresa">Sobre nós</a>
+
+            <a href="#contactos" class="nav-button">
+                Pedir orçamento
+            </a>
+
+        </nav>
+
+    </div>
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="container hero-inner">
+
+        <div>
+
+            <div class="eyebrow">
+                Lavagem profissional de exteriores
+            </div>
+
+
+            <h1>
+                Dê uma nova vida às suas superfícies exteriores.
+            </h1>
+
+
+            <p class="hero-description">
+                Lavagem profissional de fachadas, telhados, pavimentos,
+                muros e outras superfícies exteriores, com atenção ao
+                detalhe e ao resultado final.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#contactos"
+                   class="button button-primary">
+                    Pedir orçamento →
+                </a>
+
+                <a href="tel:+351969089268"
+                   class="button button-secondary">
+                    Ligar: 969 089 268
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="hero-visual">
+
+            <div class="visual-content">
+
+                <small>
+                    HS Lavagens Exteriores
+                </small>
+
+                <h2>
+                    Limpeza cuidada.
+                    Resultado visível.
+                </h2>
+
+                <div class="visual-list">
+
+                    <span>Fachadas</span>
+                    <span>Telhados</span>
+                    <span>Pavimentos</span>
+                    <span>Muros</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SOBRE
+========================= -->
+
+<section class="section" id="empresa">
+
+    <div class="container intro">
+
+        <div>
+
+            <div class="section-label">
+                HS Lavagens Exteriores
+            </div>
+
+            <h2 class="section-title">
+                Limpeza que faz a diferença.
+            </h2>
+
+        </div>
+
+
+        <div class="intro-text">
+
+            <p>
+                Na HS Lavagens Exteriores realizamos serviços de
+                lavagem e limpeza de superfícies exteriores,
+                com uma abordagem profissional e cuidada.
+            </p>
+
+            <p>
+                O nosso objetivo é ajudar a recuperar o aspeto
+                das superfícies e deixar cada espaço mais limpo,
+                cuidado e valorizado.
+            </p>
+
+            <p>
+                Cada trabalho é analisado de acordo com a superfície,
+                o estado e o resultado pretendido.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SERVIÇOS
+========================= -->
+
+<section class="section services-section" id="servicos">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <div class="section-label">
+                    O que fazemos
+                </div>
+
+                <h2 class="section-title">
+                    Serviços de lavagem exterior
+                </h2>
+
+            </div>
+
+            <p>
+                Soluções de limpeza para diferentes tipos
+                de superfícies e espaços exteriores.
+            </p>
+
+        </div>
+
+
+
+        <div class="services-grid">
+
+
+            <article class="service service-highlight">
+
+                <span class="service-number">
+                    01
+                </span>
+
+                <div class="service-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Lavagem de exteriores
+                </h3>
+
+                <p>
+                    Limpeza profissional de diferentes
+                    superfícies e áreas exteriores.
+                </p>
+
+            </article>
+
+
+
+            <article class="service">
+
+                <span class="service-number">
+                    02
+                </span>
+
+                <div class="service-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Fachadas
+                </h3>
+
+                <p>
+                    Lavagem de fachadas e paredes exteriores
+                    para recuperar um aspeto mais limpo e cuidado.
+                </p>
+
+            </article>
+
+
+
+            <article class="service">
+
+                <span class="service-number">
+                    03
+                </span>
+
+                <div class="service-icon">
+                    ▲
+                </div>
+
+                <h3>
+                    Telhados
+                </h3>
+
+                <p>
+                    Limpeza de telhados e outras superfícies
+                    exteriores, de acordo com as características
+                    do trabalho.
+                </p>
+
+            </article>
+
+
+
+            <article class="service">
+
+                <span class="service-number">
+                    04
+                </span>
+
+                <div class="service-icon">
+                    ▦
+                </div>
+
+                <h3>
+                    Pavimentos
+                </h3>
+
+                <p>
+                    Lavagem de pavimentos, zonas exteriores,
+                    pátios e áreas de circulação.
+                </p>
+
+            </article>
+
+
+
+            <article class="service">
+
+                <span class="service-number">
+                    05
+                </span>
+
+                <div class="service-icon">
+                    ▰
+                </div>
+
+                <h3>
+                    Muros
+                </h3>
+
+                <p>
+                    Limpeza de muros e outras superfícies
+                    exteriores para um resultado mais cuidado.
+                </p>
+
+            </article>
+
+
+
+            <article class="service">
+
+                <span class="service-number">
+                    06
+                </span>
+
+                <div class="service-icon">
+                    +
+                </div>
+
+                <h3>
+                    Outros serviços
+                </h3>
+
+                <p>
+                    Tem outra superfície exterior que precisa
+                    de limpeza? Fale connosco para avaliarmos.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     TRABALHOS
+========================= -->
+
+<section class="section" id="trabalhos">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <div class="section-label">
+                    Trabalhos realizados
+                </div>
+
+                <h2 class="section-title">
+                    Veja a diferença.
+                </h2>
+
+            </div>
+
+            <p>
+                Aqui vamos colocar fotografias reais dos
+                trabalhos realizados pela HS.
+            </p>
+
+        </div>
+
+
+
+        <div class="gallery">
+
+
+            <div class="gallery-item large">
+
+                <div class="gallery-placeholder">
+
+                    <strong>
+                        Fotografia principal
+                    </strong>
+
+                    <span>
+                        Substituir por fotografia real
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="gallery-item">
+
+                <div class="gallery-placeholder">
+
+                    <strong>
+                        Trabalho realizado
+                    </strong>
+
+                    <span>
+                        Substituir por fotografia real
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="gallery-item">
+
+                <div class="gallery-placeholder">
+
+                    <strong>
+                        Resultado final
+                    </strong>
+
+                    <span>
+                        Substituir por fotografia real
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="gallery-item">
+
+                <div class="gallery-placeholder">
+
+                    <strong>
+                        Antes e depois
+                    </strong>
+
+                    <span>
+                        Substituir por fotografia real
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="gallery-item">
+
+                <div class="gallery-placeholder">
+
+                    <strong>
+                        Mais trabalhos
+                    </strong>
+
+                    <span>
+                        Substituir por fotografia real
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     COMO FUNCIONA
+========================= -->
+
+<section class="section process-section">
+
+    <div class="container">
+
+        <div style="text-align:center; margin-bottom:50px;">
+
+            <div class="section-label"
+                 style="justify-content:center;">
+                Como funciona
+            </div>
+
+            <h2 class="section-title">
+                Simples, claro e profissional.
+            </h2>
+
+        </div>
+
+
+
+        <div class="process-grid">
+
+
+            <div class="process">
+
+                <span class="process-number">
+                    01
+                </span>
+
+                <h3>
+                    Contacte-nos
+                </h3>
+
+                <p>
+                    Explique-nos o que pretende limpar e,
+                    se possível, envie fotografias.
+                </p>
+
+            </div>
+
+
+
+            <div class="process">
+
+                <span class="process-number">
+                    02
+                </span>
+
+                <h3>
+                    Avaliamos
+                </h3>
+
+                <p>
+                    Analisamos o trabalho e as características
+                    da superfície.
+                </p>
+
+            </div>
+
+
+
+            <div class="process">
+
+                <span class="process-number">
+                    03
+                </span>
+
+                <h3>
+                    Orçamento
+                </h3>
+
+                <p>
+                    Apresentamos uma proposta adequada
+                    ao trabalho pretendido.
+                </p>
+
+            </div>
+
+
+
+            <div class="process">
+
+                <span class="process-number">
+                    04
+                </span>
+
+                <h3>
+                    Realizamos
+                </h3>
+
+                <p>
+                    Executamos o serviço com cuidado
+                    e atenção ao detalhe.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACTOS
+========================= -->
+
+<section class="contact-section" id="contactos">
+
+    <div class="container contact-grid">
+
+
+        <div>
+
+            <div class="section-label">
+                Peça o seu orçamento
+            </div>
+
+            <h2 class="contact-title">
+                Vamos falar sobre o seu próximo trabalho?
+            </h2>
+
+            <p class="contact-description">
+                Entre em contacto com a HS Lavagens Exteriores.
+                Explique-nos o que pretende e teremos todo o
+                gosto em avaliar o seu pedido.
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-box">
+
+
+            <a href="tel:+351969089268"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <div>
+
+                    <small>
+                        Telefone
+                    </small>
+
+                    <strong>
+                        +351 969 089 268
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+
+            <a href="mailto:hs.orcamentos2026@hotmail.com"
+               class="contact-item">
+
+                <div class="contact-icon">
+                    @
+                </div>
+
+                <div>
+
+                    <small>
+                        Email
+                    </small>
+
+                    <strong>
+                        hs.orcamentos2026@hotmail.com
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+
+            <a href="https://www.instagram.com/heldersilva.lavagem.exteriores/"
+               target="_blank"
+               rel="noopener"
+               class="contact-button">
+
+                Ver Instagram →
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================
+     RODAPÉ
+========================= -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+            <a href="#inicio" class="logo">
+
+                <div class="logo-symbol">
+                    HS
+                </div>
+
+                <div class="logo-text">
+
+                    <strong>
+                        HS
+                    </strong>
+
+                    <span>
+                        LAVAGENS EXTERIORES
+                    </span>
+
+                </div>
+
+            </a>
+
+            <p>
+                Lavagem profissional de exteriores.
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <a href="#servicos">
+                Serviços
+            </a>
+
+            <a href="#trabalhos">
+                Trabalhos
+            </a>
+
+            <a href="#empresa">
+                Sobre nós
+            </a>
+
+            <a href="#contactos">
+                Contactos
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-social">
+
+            <strong style="color:white;">
+                Redes sociais
+            </strong>
+
+            <br><br>
+
+            <a href="https://www.instagram.com/heldersilva.lavagem.exteriores/"
+               target="_blank"
+               rel="noopener">
+
+                Instagram
+            </a>
+
+            <br><br>
+
+            Facebook:
+            <br>
+
+            HS Serviço Profissional De Lavagem Em Exteriores
+
+        </div>
+
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 HS Lavagens Exteriores.
+            Todos os direitos reservados.
+        </span>
+
+        <span>
+            hslavagensexteriores.com
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+</body>
+</html>
