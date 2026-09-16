@@ -872,8 +872,8 @@
         radial-gradient(circle at 80% 18%, rgba(22,168,222,.11), transparent 28%),
         linear-gradient(180deg,#fff 0%,var(--bg) 100%); }
     .hero-inner{ padding:70px 0 88px; }
-    .tag{ color:var(--blue); background:#fff; box-shadow:0 7px 20px rgba(11,49,87,.05); }
-    .tag-dot{ background:var(--amber); }
+    .tag{ color:var(--blue); background:#fff; box-shadow:0 7px 20px rgba(11,49,87,.05); border:1px solid rgba(11,49,87,.06); }
+    .tag-dot{ background:#20B26B; box-shadow:0 0 0 5px rgba(32,178,107,.12); }
     .hero h1{ color:var(--navy); }
     .hero h1 strong{ color:var(--blue); }
     .hero-description{ max-width:590px; }
@@ -1067,8 +1067,9 @@ footer .logo img.brand-logo{width:150px;height:62px;background:transparent;borde
 .hero-panel-content::after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;right:-75px;bottom:-85px;border:1px solid rgba(114,225,246,.35);box-shadow:0 0 0 24px rgba(114,225,246,.05),0 0 0 48px rgba(114,225,246,.035);}
 .hero-panel-kicker{display:block;color:var(--aqua);font-size:11px;font-weight:800;letter-spacing:1.7px;margin-bottom:18px;}
 .hero-panel-content strong{display:block;font-family:var(--font-head);font-size:clamp(30px,3.2vw,42px);line-height:1.05;letter-spacing:-1px;max-width:330px;}
-.hero-panel-note{display:block;color:rgba(255,255,255,.76);font-size:14px;line-height:1.65;max-width:320px;margin-top:20px;}
-.hero-panel-line{display:flex;align-items:center;gap:8px;margin-top:28px;}
+.hero-panel-note{display:block;color:rgba(255,255,255,.76);font-size:14px;line-height:1.65;max-width:320px;margin-top:20px;position:relative;padding-bottom:20px;}
+.hero-panel-note::after{content:"";display:block;width:54px;height:3px;border-radius:99px;background:var(--aqua);position:absolute;left:0;bottom:0;}
+.hero-panel-line{display:none;}
 .hero-panel-line span{display:block;height:3px;border-radius:10px;background:var(--amber);width:46px;}
 .hero-panel-line span:last-child{background:var(--aqua);width:18px;}
 .hero-panel-line i{display:block;width:62px;height:1px;background:rgba(255,255,255,.28);}
