@@ -883,7 +883,7 @@
         border-radius:50%; border:0; cursor:pointer; background:#fff; color: var(--navy);
         font-size:22px; line-height:1; box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
-    .lightbox-label{ position:absolute; left:14px; bottom:14px; top:auto; }
+    .badge.lightbox-label{ position:absolute; left:14px; bottom:14px; top:auto; }
 
     @media (max-width: 960px){ .work-card{ flex-basis: 100%; } }
     @media (max-width: 680px){
@@ -892,6 +892,7 @@
         .work-card{ padding: 10px; border-radius: 22px; }
         .work-pair{ gap: 6px; }
         .badge{ left:8px; top:8px; font-size:10.5px; padding:5px 9px; }
+        .badge.lightbox-label{ display:none; }
         .visual-logo img{ height:72px; }
         .visual-logo{ top:22px; left:22px; }
     }
